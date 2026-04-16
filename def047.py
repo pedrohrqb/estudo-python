@@ -1,8 +1,5 @@
 
-s = 0
-for n in range(1, 500):
-    if n % 3 == 0:
-        if n % 2 == 1:
-            s += n
-            print(f'{n} ' , end='')
-print(f'\nO total é {s}')
+for n in range(1, 50):
+    if n % 2 == 0:
+        print(f'{n} ', end='')
+print('FIM')
