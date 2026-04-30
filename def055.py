@@ -1,10 +1,16 @@
+maior = 0
+menor = 0
 
-valor = 0
-maior = 0 
-menor = 0 
+for p in range(1, 4):
+    peso = float(input(f'Peso da {p}ª pessoa:'))
+    if p == 1:
+        maior = peso
+        menor = peso
+    else:
+        if peso > maior:
+            maior = peso
+        if peso < menor:
+            menor = peso
 
-for n in range(2):
-    peso = float(input('Digite o número do seu peso '))
-    valor += peso
-    if valor
-print(f'O maior peso foi {maior} e o menor foi {menor}')
+print(f'O maior peso lido foi de {maior}Kg')
+print(f'O menor peso lido foi de {menor}Kg')
