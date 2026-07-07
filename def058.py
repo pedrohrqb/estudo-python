@@ -15,16 +15,16 @@ while True:
     num_jogador = int(input('Digite um número entre 1 a 10: '))
 
     if num_jogador == num_maquina:
-        print('Parabéns, você conseguiu adivinhar o número escolhido')
+        print('Parabéns, você conseguiu adivinhar o número escolhido.')
         break
     if num_jogador != num_maquina:
         cont += 1
         print('Poxa, infelizmento não foi dessa vez, deseja tentar novamente?')
-        print(f'O número escolhido foi {num_maquina}')
         print('Digite [S] para SIM ou Digite [N] para terminar a partida. ')
         regame = str(input('Deseja continuar a partida? [S/N] ')).strip().upper()
         
         if regame == 'N':
             print('Obrigado por jogar conosco, até logo.')
             break
+print(f'O número escolhido pela máquina foi {num_maquina}')
 print(f'O número de tentativas de acertos foi {cont}.')
